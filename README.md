@@ -60,7 +60,7 @@ main.py
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-task-agent
+git clone https://github.com/Paul-Gifford/claude-task-agent
 cd claude-task-agent
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
