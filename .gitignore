@@ -4,9 +4,10 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
-outputs/*.md
-outputs/*.txt
-outputs/*.json
+# Ignore everything the agent generates, but keep the dir (.gitkeep).
+# Curated sample outputs live in examples/ instead.
+outputs/*
+!outputs/.gitkeep
 *.egg-info/
 dist/
 build/
