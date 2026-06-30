@@ -48,10 +48,13 @@ main.py
       └── calculator.py     # Safe math evaluation
   └── memory/
       └── session.py        # Step-by-step log: what ran, what returned
-  └── outputs/              # All agent-generated files land here
+  └── outputs/              # All agent-generated files land here (gitignored)
+  └── examples/             # Curated sample outputs — see what the agent produces
   └── .env                  # API keys (never committed)
   └── requirements.txt
 ```
+
+See [`examples/`](examples/) for real, unedited outputs the agent generated from a single goal each.
 
 ---
 
@@ -152,4 +155,4 @@ The agent picks it up on next run. No changes to core loop logic required.
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).

@@ -8,6 +8,10 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
+# Windows consoles default to cp1252, which can't encode the ✓/✗ output below.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 from tools.calculator import calculator
 from tools.write_file import write_file
 from tools.read_file import read_file
